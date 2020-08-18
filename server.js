@@ -3,9 +3,6 @@ const app = express();
 const port = 3001;
 const path = "initial.json";
 
-app.get("/", (req, res) => {
-    res.send("Hello World!");
-});
 // app.use(express.static("/api/v1"));
 
 app.use("/api/v1", express.static("api/v1"));
